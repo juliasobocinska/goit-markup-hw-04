@@ -45,12 +45,16 @@ ul {
 }
 .ul-list .link-studio::before,
 .ul-list .link-studio::after {
-	width: 48px;
 	height: 4px;
 	border-radius: 2px;
 	color: rgba(64, 75, 191, 1);
 	content: "";
 	padding-top: 20px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	background-color: #404bbf;
 }
 /*.ul-list .link-studio {
     display: flex;
@@ -76,6 +80,15 @@ ul {
 	height: 72px;
 	display: flex;
 	border-bottom: 1px solid rgba(231, 233, 252, 1);
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.menu .ul-list {
+	position: relative;
+	color: #404bbf;
+	transition: #404bbf 250ms cubic-bezier(0.4, 0.2, 1);
+}
+.second-menu .ul-list {
+	transition: #404bbf 250ms cubic-bezier(0.4, 0.2, 1);
 }
 header {
 	background-color: #ffffff;
@@ -160,6 +173,7 @@ h1 {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	max-width: 1440px;
 }
 .solutions {
 	color: #ffffff;
@@ -192,6 +206,7 @@ h1 {
 	min-width: 169px;
 	height: 56px;
 	border: none;
+	transition: #4d5ae5 250ms cubic-bezier(0.4, 0.2, 1);
 }
 .section-first .button:hover,
 .section-first .button:focus {
@@ -243,14 +258,17 @@ ul > .second-section-list {
 	border: 1px solid rgba(142, 143, 153, 1);
 	background-color: rgba(244, 244, 253, 1);
 	padding: 24px 100px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 8px;
 }
 
 /*sekcja trzecia*/
 ul > .list {
 	border-radius: 0px 0px 4px 4px;
-	box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-		0px 1px 1px 0px rgba(46, 47, 66, 0.08),
-		0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+		0px 1px 1px rgba(46, 47, 66, 0.16),
+		0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 ul > .list {
 	width: calc((100%-72px) / 4);
@@ -289,6 +307,13 @@ ul > .list {
 	gap: 24px;
 	padding: 8px 16px 0px 16px;
 	justify-content: center;
+}
+.social .media{
+	transition: rgba(77, 90, 229, 1) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social .media:hover,
+.social .media:focus {
+	background-color: #404bbf;
 }
 .media {
 	background-color: rgba(77, 90, 229, 1);
@@ -417,30 +442,31 @@ ul > .list-fourth {
 	display: inline-block;
 	margin-bottom: 16px;
 }
-.social-footer .social-media {
-	display: flex;
-	gap: 16px;
-}
 .social-footer li {
 	text-decoration: none;
 	list-style-type: none;
 }
-.footer-box {
+.footer-media {
 	display: flex;
-	padding-bottom: 132px;
-	width: 208px;
-	height: 80px;
-	margin-left: 540px;
-	margin-right: 692px;
-}
-.social-text {
-	font-family: "Roboto", sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 24px;
-	letter-spacing: 2%;
-	margin-bottom: 16px;
-	color: rgba(255, 255, 255, 1);
-	display: flex;
+	align-items: baseline;
+	margin-right: 120px;
 
 }
+.social-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #ffffff;
+	margin-bottom: 16px;
+
+}
+.social-media {
+	display: flex;
+	gap: 16px;
+}
+.social {
+	width: 40px;
+	height: 40px;
+}
+
