@@ -52,7 +52,7 @@ ul {
 	left: 0;
 	bottom: -1px;
 	background-color: #404bbf;
-	height: 4%;
+	height: 4px;
 }
 .nav > a {
 	margin-right: 76px;
@@ -301,8 +301,8 @@ ul > .list {
 	gap: 24px;
 	justify-content: center;
 }
-.social .media{
-	transition: rgba(77, 90, 229, 1) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.social-media .media{
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social .media:hover,
 .social .media:focus {
@@ -384,23 +384,23 @@ ul > .list-fourth {
 .blue-text {
     position: relative;
     overflow: hidden;
+
 }
 .hidden {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    transform: translateY(100%);
     background-color: rgba(77, 90, 229, 1);
+	transform: translateY(100%);
     transition: transform 250ms ease-in-out;
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: rgba(244, 244, 253, 1);
-    padding-top: 40px;
-    padding-left: 32px;
+    padding: 40px 32px;
 }
 .list-fourth:hover .hidden {
     transform: translateY(0);
@@ -455,7 +455,8 @@ ul > .list-fourth {
 	letter-spacing: 0.02em;
 	color: #ffffff;
 	margin-bottom: 16px;
-	display: flex;
+    display: flex;
+	align-items: baseline;
 }
 .social-group {
 	width: 40px;
@@ -475,6 +476,7 @@ ul > .list-fourth {
 	align-items: center;
 	justify-content: center;
 }
-.media-group:hover {
+.media-group:hover,
+.media-group:focus {
 	background-color: #31D0AA;
 }
