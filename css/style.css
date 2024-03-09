@@ -427,6 +427,8 @@ ul > .list {
 	margin-left: 156px;
 	margin-bottom: 100px;
 	margin-right: 1020px;
+	display: flex;
+	align-items: baseline;
 }
 .container-footer > a {
 	display: inline-block;
@@ -438,13 +440,6 @@ ul > .list {
 .social-footer li {
 	text-decoration: none;
 	list-style-type: none;
-}
-.footer-media {
-	gap: 16px;
-	justify-content: space-evenly;
-	transform: translate(540px, -132px);
-	display: flex;
-	align-items: baseline;
 }
 .social-text {
 	font-weight: 500;
